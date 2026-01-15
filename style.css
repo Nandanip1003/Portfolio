@@ -176,6 +176,27 @@ header {
   list-style: none;
 }
 
+@media(max-width: 768px){
+  .nav-links{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: white;
+    width: 200px;
+    padding: 1rem;
+  }
+  .nav-links.active{
+    display: flex;
+  }
+  .mobile-menu-btn{
+    display: block;
+    cursor: pointer;
+    font-size: 28px;
+  }
+}
+
 .nav-links li {
   margin-left: 2rem;
 
@@ -229,27 +250,6 @@ header {
   color: var(--text-primary);
   font-size: 1.5rem;
   cursor: pointer;
-}
-
-@media(max-width: 768px){
-  .nav-links{
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    background: white;
-    width: 200px;
-    padding: 1rem;
-  }
-  .nav-links.active{
-    display: flex;
-  }
-  .mobile-menu-btn{
-    display: block;
-    cursor: pointer;
-    font-size: 28px;
-  }
 }
 
 /* Hero Section */
